@@ -24,7 +24,7 @@ import Testing from './pages/Testing/Testing';
 import AlcoholTestJournal from './pages/Journals/AlcoholTestJournal';
 
 // Protected route wrapper
-const ProtectedRoute = ({ children }: { children: JSX.Element }) => {
+const ProtectedRoute = ({ children }: { children: React.ReactNode }) => {
   // В реальном приложении здесь была бы проверка аутентификации
   const isAuthenticated = true;
   return isAuthenticated ? children : <Navigate to="/login" />;

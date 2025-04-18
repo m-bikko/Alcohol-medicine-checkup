@@ -3,19 +3,12 @@ import { createTheme } from '@mui/material/styles';
 declare module '@mui/material/styles' {
   interface Palette {
     tertiary: Palette['primary'];
-    background: {
-      default: string;
-      paper: string;
-      light: string;
-    };
+  }
+  interface TypeBackground {
+    light: string;
   }
   interface PaletteOptions {
     tertiary?: PaletteOptions['primary'];
-    background?: {
-      default?: string;
-      paper?: string;
-      light?: string;
-    };
   }
 }
 
